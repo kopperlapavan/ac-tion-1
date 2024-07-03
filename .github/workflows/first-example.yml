@@ -4,7 +4,8 @@ on: push
 
 jobs:
     first_job:
-        runs-on: ubuntu-letest
+        runs-on:
+         group: ubuntu-letest
         steps:
         - name: wellcome massage
           run: echo  "my first worlflow"
